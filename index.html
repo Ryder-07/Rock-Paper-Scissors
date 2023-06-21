@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="screen">
+      <div class="main">
+        <h1>Rock Paper Scissors</h1>
+        <div class="game">
+          <div class="play">
+            <div class="score">
+              <div class="win">
+                WINS <br />
+                <div class="stats" id="win_score">0</div>
+              </div>
+              <div class="loss">
+                LOSS <br />
+                <div class="stats" id="loss_score">0</div>
+              </div>
+              <div class="draw">
+                DRAWS <br />
+                <div class="stats" id="draw_score">0</div>
+              </div>
+            </div>
+            <div class="output">
+              <div class="signs" id="comp">
+                <i class="fa-solid fa-hand-fist"></i>
+              </div>
+              <div class="signs" id="user">
+                <i class="fa-solid fa-hand-fist"></i>
+              </div>
+            </div>
+          </div>
+          <div class="seperator"></div>
+          <div class="choose">
+            <div class="text">PICK ONE TO START </div>
+            
+            <div class="option">
+              <div class="signs" id="rock">
+                <i class="fa-solid fa-hand-fist"></i>
+              </div>
+              <div class="signs" id="paper">
+                <i class="fa-solid fa-hand"></i>
+              </div>
+              <div class="signs" id="scissors">
+                <i class="fa-solid fa-hand-peace"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
