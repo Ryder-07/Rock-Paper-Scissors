@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.screen{
+    height: 100vh;
+    width: 100vw;
+
+
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    height: 50vmin;
+    width: 90vmin;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    flex-direction: column;
+    overflow: hidden;
+}
+h1{
+    height: 7vmin;
+    width: 45vmin;
+    /* font-family: 'Courgette', cursive; */
+    text-align: center;
+    border: 0px ;
+    border-bottom: 3px solid #F37335;
+}
+.game{
+    display: flex;
+    height: 53vmin;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 4vmin;
+}
+.play{
+    height: 100%;
+    width: 50%;
+}
+.choose{
+    height: 100%;
+    width: 50%;
+}
+.score{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    font-size: 3vmin;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signs{
+    height: 5vmin;
+    width: 5vmin;
+    color: black;
+    font-size: 5vmin;
+    cursor: pointer;
+}
+.output{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* background-color: antiquewhite; */
+}
+#comp{
+    transform:rotate(90deg);
+}
+#user{
+    transform: rotate(-90deg) scaleX(-1);
+}
+.text{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+    font-size: 3vmin;
+}
+.option{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.seperator{
+    height: 30vmin;
+    width: 0.3vmin;
+    background-color: gray;
+}
