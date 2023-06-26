@@ -15,6 +15,10 @@
   />
   <body>
     <div class="screen">
+      <div class="modal" id="modal">
+        <p id="text">You Won!!</p>
+        <button id="restart" onclick="restart_fun()">Restart</button>
+      </div>
       <div class="main">
         <h1>Rock Paper Scissors</h1>
         <div class="game">
@@ -48,13 +52,13 @@
             
             <div class="option">
               <div class="signs" id="rock">
-                <i class="fa-solid fa-hand-fist"></i>
+                <i class="click fa-solid fa-hand-fist" onclick="choose_rock()"></i>
               </div>
               <div class="signs" id="paper">
-                <i class="fa-solid fa-hand"></i>
+                <i class="click fa-solid fa-hand" onclick="choose_paper()"></i>
               </div>
               <div class="signs" id="scissors">
-                <i class="fa-solid fa-hand-peace"></i>
+                <i class="click fa-solid fa-hand-peace" onclick="choose_scissor()"></i>
               </div>
             </div>
           </div>
@@ -62,4 +66,5 @@
       </div>
     </div>
   </body>
+  <script src="main.js"></script>
 </html>

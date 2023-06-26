@@ -10,7 +10,7 @@
 .screen{
     height: 100vh;
     width: 100vw;
-
+    position: relative;
 
     background: #FDC830;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
@@ -30,6 +30,8 @@
     font-family: 'Noto Sans', sans-serif;
     flex-direction: column;
     overflow: hidden;
+    -webkit-box-shadow: 3px 3px 15px 0px #000000; 
+box-shadow: 3px 3px 15px 0px #000000;
 }
 h1{
     height: 7vmin;
@@ -108,4 +110,28 @@ h1{
     height: 30vmin;
     width: 0.3vmin;
     background-color: gray;
+}
+.modal{
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 20px;
+    -webkit-box-shadow: 3px 3px 19px 0px #000000; 
+box-shadow: 3px 3px 19px 0px #000000;
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 7vmin;
+}
+#restart{
+    font-size: 4vmin;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
 }
