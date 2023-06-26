@@ -45,7 +45,9 @@ function choose_rock() {
     loss_score = loss_score + 1;
     loss.innerHTML = `${loss_score}`;
   }
-  end_game();
+  setTimeout(function () {
+    end_game();
+  }, 2000);
 }
 function choose_paper() {
   var comp_id = Math.floor(Math.random() * 3) + 1;
@@ -81,7 +83,9 @@ function choose_paper() {
     loss_score = loss_score + 1;
     loss.innerHTML = `${loss_score}`;
   }
-  end_game();
+  setTimeout(function () {
+    end_game();
+  }, 2000);
 }
 function choose_scissor() {
   var comp_id = Math.floor(Math.random() * 3) + 1;
@@ -119,14 +123,14 @@ function choose_scissor() {
   }
   setTimeout(function () {
     end_game();
-  }, 6000);
+  }, 2000);
 }
 function end_game() {
-  if (win_score + loss_score + draw_score == 5) {
+  if (win_score + loss_score + draw_score >= 5) {
     // sign.forEach(removeAttribute("onclick"));
-    sign.forEach((e) => {
-      e.removeAttribute("onclick");
-    });
+    // sign.forEach((e) => {
+    //   e.removeAttribute("onclick");
+    // });
     if (win_score > loss_score) {
       result_text.innerHTML = "You Won!!";
       modal.style.display = "flex";
